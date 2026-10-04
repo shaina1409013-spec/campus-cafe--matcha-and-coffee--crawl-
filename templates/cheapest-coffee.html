@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Cheapest Coffee</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navbar.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        ☕ Campus Café
+    </div>
+
+    <ul class="nav-links">
+
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+
+        <li>
+            <a href="cafes.html">Cafés</a>
+        </li>
+
+        <li>
+            <a href="drinks.html">Drinks</a>
+        </li>
+
+        <li>
+            <a href="reviews.html">Reviews</a>
+        </li>
+
+        <li>
+            <a href="cheapest-coffee.html">
+                Cheapest Coffee
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+<main class="container">
+
+    <h1 class="section-title">
+        💰 Cheapest Iced Coffee
+    </h1>
+
+
+    <div id="coffeeList"></div>
+
+</main>
+
+
+<script>
+
+const coffees = [
+
+    {
+        cafe: "Campus Brew",
+        price: 120
+    },
+
+    {
+        cafe: "Matcha House",
+        price: 150
+    },
+
+    {
+        cafe: "Bean Corner",
+        price: 90
+    },
+
+    {
+        cafe: "Green Cup",
+        price: 110
+    }
+
+];
+
+
+coffees.sort(function(a, b) {
+
+    return a.price - b.price;
+
+});
+
+
+const list =
+    document.getElementById("coffeeList");
+
+
+coffees.forEach(function(coffee, index) {
+
+    list.innerHTML += `
+
+        <div class="card"
+             style="margin-bottom:15px">
+
+            <h2>
+                ${index + 1}. ${coffee.cafe}
+            </h2>
+
+            <p>
+                Iced Coffee:
+                <strong>₹${coffee.price}</strong>
+            </p>
+
+        </div>
+
+    `;
+
+});
+
+</script>
+
+</body>
+</html>

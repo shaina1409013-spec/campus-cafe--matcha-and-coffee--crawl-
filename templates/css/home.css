@@ -1,0 +1,80 @@
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #efebe9;
+    padding: 50px 20px;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #3e2723;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.feature-container .card {
+    text-align: center;
+}
+
+.feature-container h3 {
+    margin-bottom: 12px;
+}
+
+.cafe-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.cafe-card {
+    text-align: center;
+}
+
+.cafe-image {
+    height: 180px;
+    background: #d7ccc8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.cafe-card h3 {
+    margin-bottom: 10px;
+}
+
+.cafe-card p {
+    margin: 7px;
+}
+
+.cta {
+    margin-top: 60px;
+    padding: 70px 20px;
+    text-align: center;
+    background: #3e2723;
+    color: white;
+}
+
+.cta h2 {
+    margin-bottom: 25px;
+}

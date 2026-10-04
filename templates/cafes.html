@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Cafés - Campus Café</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/cafes.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        ☕ Campus Café
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cafes.html">Cafés</a></li>
+        <li><a href="drinks.html">Drinks</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="cheapest-coffee.html">Cheapest Coffee</a></li>
+    </ul>
+
+    <div class="nav-buttons">
+        <a href="login.html" class="nav-btn">Login</a>
+        <a href="signup.html" class="nav-btn">Sign Up</a>
+    </div>
+
+</nav>
+
+
+<main class="container">
+
+    <h1 class="section-title">
+        Explore Cafés ☕
+    </h1>
+
+
+    <!-- Search -->
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchCafe"
+            placeholder="🔍 Search café..."
+        >
+
+    </div>
+
+
+    <!-- Filters -->
+
+    <div class="filters">
+
+        <button onclick="filterCafes('all')">
+            All
+        </button>
+
+        <button onclick="filterCafes('wifi')">
+            Wi-Fi
+        </button>
+
+        <button onclick="filterCafes('matcha')">
+            Matcha
+        </button>
+
+        <button onclick="filterCafes('coffee')">
+            Coffee
+        </button>
+
+    </div>
+
+
+    <!-- Café Cards -->
+
+    <div class="cafe-container" id="cafeContainer">
+
+
+        <div class="card cafe-card"
+             data-name="Campus Brew"
+             data-category="wifi coffee">
+
+            <div class="cafe-image">
+                ☕
+            </div>
+
+            <h3>Campus Brew</h3>
+
+            <p>📍 Near Main Gate</p>
+
+            <p>📶 Wi-Fi Available</p>
+
+            <p>⭐ 4.5/5</p>
+
+            <a href="cafe-details.html?id=1"
+               class="btn">
+
+                View Details
+
+            </a>
+
+        </div>
+
+
+        <div class="card cafe-card"
+             data-name="Matcha House"
+             data-category="wifi matcha">
+
+            <div class="cafe-image">
+                🍵
+            </div>
+
+            <h3>Matcha House</h3>
+
+            <p>📍 University Road</p>
+
+            <p>📶 Wi-Fi Available</p>
+
+            <p>⭐ 4.7/5</p>
+
+            <a href="cafe-details.html?id=2"
+               class="btn">
+
+                View Details
+
+            </a>
+
+        </div>
+
+
+        <div class="card cafe-card"
+             data-name="Bean Corner"
+             data-category="coffee wifi">
+
+            <div class="cafe-image">
+                🥤
+            </div>
+
+            <h3>Bean Corner</h3>
+
+            <p>📍 Student Market</p>
+
+            <p>📶 Wi-Fi Available</p>
+
+            <p>⭐ 4.3/5</p>
+
+            <a href="cafe-details.html?id=3"
+               class="btn">
+
+                View Details
+
+            </a>
+
+        </div>
+
+
+        <div class="card cafe-card"
+             data-name="Green Cup"
+             data-category="matcha coffee">
+
+            <div class="cafe-image">
+                🍵
+            </div>
+
+            <h3>Green Cup</h3>
+
+            <p>📍 College Road</p>
+
+            <p>📶 Wi-Fi Available</p>
+
+            <p>⭐ 4.6/5</p>
+
+            <a href="cafe-details.html?id=4"
+               class="btn">
+
+                View Details
+
+            </a>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<script src="js/cafes.js"></script>
+
+</body>
+</html>

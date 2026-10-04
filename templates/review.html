@@ -1,0 +1,147 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Write a Review - Campus Café</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Campus Café</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cafes.html">Cafés</a></li>
+            <li><a href="drinks.html">Menu</a></li>
+            <li><a href="review.html">Reviews</a></li>
+        </ul>
+
+        <div class="nav-buttons">
+            <a href="login.html" class="nav-btn">Login</a>
+            <a href="signup.html" class="nav-btn">Sign Up</a>
+        </div>
+    </nav>
+
+    <!-- Review Form -->
+    <div class="form-container">
+
+        <div class="form-card">
+
+            <h1>Write Your Review</h1>
+
+            <form id="reviewForm">
+
+                <!-- Cafe -->
+                <label for="cafe">Select Café</label>
+
+                <select id="cafe" required>
+                    <option value="">-- Select Café --</option>
+                    <option value="Campus Café">Campus Café</option>
+                    <option value="Coffee Corner">Coffee Corner</option>
+                    <option value="The Green Cup">The Green Cup</option>
+                    <option value="Brew House">Brew House</option>
+                    <option value="Student Café">Student Café</option>
+                </select>
+
+
+                <!-- Food / Drink -->
+                <label for="item">Select Food / Drink</label>
+
+                <select id="item" required>
+                    <option value="">-- Select Item --</option>
+
+                    <optgroup label="☕ Drinks">
+                        <option value="Matcha Latte">Matcha Latte</option>
+                        <option value="Cold Brew">Cold Brew</option>
+                        <option value="Iced Coffee">Iced Coffee</option>
+                        <option value="Cappuccino">Cappuccino</option>
+                        <option value="Latte">Latte</option>
+                        <option value="Hot Chocolate">Hot Chocolate</option>
+                        <option value="Milkshake">Milkshake</option>
+                        <option value="Lemon Iced Tea">Lemon Iced Tea</option>
+                    </optgroup>
+
+                    <optgroup label="🍔 Food">
+                        <option value="Burger">Burger</option>
+                        <option value="Cheese Burger">Cheese Burger</option>
+                        <option value="Veg Burger">Veg Burger</option>
+                        <option value="Pizza">Pizza</option>
+                        <option value="Sandwich">Sandwich</option>
+                        <option value="French Fries">French Fries</option>
+                        <option value="Garlic Bread">Garlic Bread</option>
+                        <option value="Pasta">Pasta</option>
+                        <option value="Momos">Momos</option>
+                        <option value="Wrap">Wrap</option>
+                    </optgroup>
+
+                    <optgroup label="🍰 Desserts">
+                        <option value="Brownie">Brownie</option>
+                        <option value="Chocolate Cake">Chocolate Cake</option>
+                        <option value="Cheesecake">Cheesecake</option>
+                        <option value="Donut">Donut</option>
+                        <option value="Muffin">Muffin</option>
+                        <option value="Cookies">Cookies</option>
+                    </optgroup>
+
+                </select>
+
+
+                <!-- Outlet -->
+                <label for="outlet">Charging Outlet Available?</label>
+
+                <select id="outlet" required>
+                    <option value="">-- Select --</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+
+
+                <!-- Rating -->
+                <label for="rating">Aesthetic Rating</label>
+
+                <select id="rating" required>
+                    <option value="">-- Select Rating --</option>
+                    <option value="5">⭐⭐⭐⭐⭐ 5 - Excellent</option>
+                    <option value="4">⭐⭐⭐⭐ 4 - Very Good</option>
+                    <option value="3">⭐⭐⭐ 3 - Good</option>
+                    <option value="2">⭐⭐ 2 - Average</option>
+                    <option value="1">⭐ 1 - Poor</option>
+                </select>
+
+
+                <!-- Review -->
+                <label for="review">Your Review</label>
+
+                <textarea
+                    id="review"
+                    rows="5"
+                    placeholder="Write your experience..."
+                    required></textarea>
+
+
+                <!-- Submit -->
+                <button type="submit" class="btn">
+                    Submit Review
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="js/reviews.js"></script>
+
+</body>
+</html>
+```
