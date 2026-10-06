@@ -1,0 +1,44 @@
+.cafe-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.details-image {
+    height: 350px;
+    background: #d7ccc8;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 120px;
+}
+
+.details-info h1 {
+    font-size: 40px;
+    color: #3e2723;
+    margin-bottom: 20px;
+}
+
+.details-info p {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.drink-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.drink-container .card {
+    text-align: center;
+}
+
+.review-card {
+    max-width: 700px;
+}

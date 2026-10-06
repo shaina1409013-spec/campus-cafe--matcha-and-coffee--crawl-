@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Reviews - Campus Café</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Campus Café</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cafes.html">Cafés</a></li>
+            <li><a href="drinks.html">Menu</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <a href="login.html" class="nav-btn">Login</a>
+            <a href="signup.html" class="nav-btn">Sign Up</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1 class="section-title">Student Reviews & Ratings</h1>
+        <p class="reviews-toolbar">
+            <a href="review.html" class="btn">Write a Review</a>
+        </p>
+        <p id="reviewSubmittedMessage" class="auth-message" role="status" aria-live="polite" hidden>Your review has been published.</p>
+        <p id="reviewsMessage" class="auth-message" role="status" aria-live="polite">Loading reviews...</p>
+        <section id="reviewsList" aria-live="polite"></section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase-config.js"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/reviews.js"></script>
+</body>
+</html>
