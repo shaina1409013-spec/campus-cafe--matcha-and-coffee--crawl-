@@ -11,5 +11,5 @@
 
 # Project rules
 
-- The teammate's frontend is plain HTML/CSS/JS in `public/site/`; `/` redirects there. Do not restyle it — backend work only touches `public/site/js/*` and script tags. Why: the frontend is owned by another team member.
-- All data access goes through `public/site/js/backend.js` (Lovable Cloud client via CDN ESM) and is protected by RLS. Why: static pages have no server, so security lives in database policies.
+- The teammate's frontend is plain HTML/CSS/JS in `frontend/public/site/`; `/` redirects there. Do not restyle it — backend work only touches `frontend/public/site/js/*` and script tags. Why: the frontend is owned by another team member.
+- All data access goes through `frontend/public/site/js/backend.js` (Lovable Cloud client via CDN ESM) and is protected by RLS. Why: static pages have no server, so security lives in database policies.

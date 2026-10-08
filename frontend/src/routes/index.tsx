@@ -1,6 +1,6 @@
 import { createFileRoute, redirect } from "@tanstack/react-router";
 
-// The team's frontend is plain HTML served from public/site.
+// The team's frontend is plain HTML served from frontend/public/site.
 export const Route = createFileRoute("/")({
   beforeLoad: () => {
     throw redirect({ href: "/site/index.html" });
