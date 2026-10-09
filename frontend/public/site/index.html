@@ -1,213 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet"
-      href="css/responsive.css">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafe Matcha Coffee Crawl — Find Your Next Favorite Cup</title>
+  <meta name="description" content="Discover great coffee, fresh matcha and amazing cafés around you. Explore our signature drinks, menu and café crawl experiences." />
+  <meta property="og:title" content="Cafe Matcha Coffee Crawl" />
+  <meta property="og:description" content="Find your next favorite cup. Discover great coffee, fresh matcha and amazing cafés around you." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-    <title>Campus Café</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/main.css" />
 </head>
-
 <body>
 
-    <!-- Navbar -->
-
-    <nav class="navbar">
-
-        <div class="logo">
-            ☕ Campus Café
-        </div>
-
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="cafes.html">Cafés</a></li>
-            <li><a href="drinks.html">Drinks</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
-            <li><a href="cheapest-coffee.html">Cheapest Coffee</a></li>
-        </ul>
-
-        <div class="nav-buttons">
-            <a href="login.html" class="nav-btn">Login</a>
-            <a href="signup.html" class="nav-btn">Sign Up</a>
-        </div>
-
-    </nav>
-
-
-    <!-- Hero -->
-
-    <section class="hero">
-
-        <div class="hero-content">
-
-            <h1>
-                Discover Your Perfect
-                Campus Café ☕
-            </h1>
-
-            <p>
-                Explore cafés, compare drinks,
-                check Wi-Fi, ambience and student reviews.
-            </p>
-
-            <a href="cafes.html" class="btn">
-                Explore Cafés
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- Features -->
-
-    <section class="container">
-
-        <h2 class="section-title">
-            Why Campus Café?
-        </h2>
-
-        <div class="feature-container">
-
-            <div class="card">
-                <h3>☕ Café Discovery</h3>
-                <p>
-                    Find cafés around your campus.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>📶 Wi-Fi</h3>
-                <p>
-                    Check Wi-Fi availability.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>⭐ Student Reviews</h3>
-                <p>
-                    See reviews from students.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>💰 Best Prices</h3>
-                <p>
-                    Find affordable iced coffee.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Popular Cafés -->
-
-    <section class="container">
-
-        <h2 class="section-title">
-            Popular Cafés
-        </h2>
-
-        <div class="cafe-container">
-
-            <div class="card cafe-card">
-
-                <div class="cafe-image">
-                    ☕
-                </div>
-
-                <h3>Campus Brew</h3>
-
-                <p>📍 Near Main Gate</p>
-
-                <p>📶 Wi-Fi Available</p>
-
-                <p>⭐ 4.5/5</p>
-
-                <br>
-
-                <a href="cafe-details.html?id=1" class="btn">
-                    View Details
-                </a>
-
-            </div>
-
-
-            <div class="card cafe-card">
-
-                <div class="cafe-image">
-                    🍵
-                </div>
-
-                <h3>Matcha House</h3>
-
-                <p>📍 University Road</p>
-
-                <p>📶 Wi-Fi Available</p>
-
-                <p>⭐ 4.7/5</p>
-
-                <br>
-
-                <a href="cafe-details.html?id=2" class="btn">
-                    View Details
-                </a>
-
-            </div>
-
-
-            <div class="card cafe-card">
-
-                <div class="cafe-image">
-                    🥤
-                </div>
-
-                <h3>Bean Corner</h3>
-
-                <p>📍 Student Market</p>
-
-                <p>📶 Wi-Fi Available</p>
-
-                <p>⭐ 4.3/5</p>
-
-                <br>
-
-                <a href="cafe-details.html?id=3" class="btn">
-                    View Details
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CTA -->
-
-    <section class="cta">
-
-        <h2>
-            Ready for your next café crawl?
-        </h2>
-
-        <a href="cafes.html" class="btn">
-            Explore Now
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo" id="nav-logo">
+        <span class="navbar__logo-icon">🍵</span>
+        <span class="navbar__logo-text">Cafe Matcha <span class="accent">Coffee Crawl</span></span>
+      </a>
+
+      <nav class="navbar__links" id="nav-links" aria-label="Main navigation">
+        <a href="#home" class="navbar__link" id="nav-home">Home</a>
+        <a href="#menu" class="navbar__link" id="nav-menu">Menu</a>
+        <a href="#coffee-crawl" class="navbar__link" id="nav-crawl">Coffee Crawl</a>
+        <a href="#about" class="navbar__link" id="nav-about">About</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <button class="cart-btn" id="cart-btn" aria-label="View cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+          </svg>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+        <a href="#menu" class="btn btn--primary" id="explore-menu-btn">Explore Menu</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero__content">
+      <p class="hero__eyebrow">☕ Your Campus Coffee Guide</p>
+      <h1 class="hero__heading">Find Your Next<br><span class="gradient-text">Favorite Cup.</span></h1>
+      <p class="hero__subtitle">Discover great coffee, fresh matcha and amazing cafés around you. From creamy lattes to vibrant matchas — your perfect cup is just a click away.</p>
+      <div class="hero__cta-group">
+        <a href="#cafes" class="btn btn--primary btn--large" id="explore-cafes-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Explore Cafés
         </a>
+        <a href="#menu" class="btn btn--outline btn--large" id="view-menu-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/></svg>
+          View Menu
+        </a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <strong>25+</strong><span>Cafés Listed</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <strong>100+</strong><span>Menu Items</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <strong>4.8★</strong><span>Avg Rating</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__image-wrap">
+      <div class="hero__image-bg"></div>
+      <img
+        src="images/hero_drinks.jpg"
+        alt="Iced matcha latte and cappuccino on a rustic café table"
+        class="hero__image"
+        id="hero-img"
+        loading="eager"
+      />
+      <div class="hero__badge hero__badge--top">
+        <span class="hero__badge-icon">🍵</span>
+        <span>Fresh Matcha</span>
+      </div>
+      <div class="hero__badge hero__badge--bottom">
+        <span class="hero__badge-icon">☕</span>
+        <span>Specialty Coffee</span>
+      </div>
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span>Scroll to explore</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </div>
+  </section>
 
-    </section>
+  <!-- ===== FEATURE CARDS ===== -->
+  <section class="section features" id="coffee-crawl">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__eyebrow">What We Offer</p>
+        <h2 class="section__title">Crafted for Every <span class="accent">Coffee Lover</span></h2>
+        <p class="section__subtitle">Three reasons why Cafe Matcha Coffee Crawl is the go-to destination for campus café explorers.</p>
+      </div>
+      <div class="features__grid">
 
+        <article class="feature-card" id="feature-coffee">
+          <div class="feature-card__img-wrap">
+            <img src="images/signature_coffee.jpg" alt="Variety of signature coffee drinks" class="feature-card__img" loading="lazy" />
+            <div class="feature-card__overlay"></div>
+          </div>
+          <div class="feature-card__body">
+            <span class="feature-card__badge">☕ Coffee</span>
+            <h3 class="feature-card__title">Signature Coffee</h3>
+            <p class="feature-card__desc">From velvety cappuccinos to bold cold brews — explore handcrafted coffee made with premium single-origin beans. Each sip tells a story.</p>
+            <a href="#menu" class="feature-card__link" id="feature-coffee-link">
+              Browse Coffee Menu
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
 
-    <script src="js/main.js"></script>
+        <article class="feature-card feature-card--accent" id="feature-matcha">
+          <div class="feature-card__img-wrap">
+            <img src="images/matcha_latte.jpg" alt="Iced matcha latte being poured" class="feature-card__img" loading="lazy" />
+            <div class="feature-card__overlay"></div>
+          </div>
+          <div class="feature-card__body">
+            <span class="feature-card__badge">🍵 Matcha</span>
+            <h3 class="feature-card__title">Fresh Matcha</h3>
+            <p class="feature-card__desc">Vibrant, earthy and absolutely delicious. Our ceremonial-grade matcha drinks are made fresh to order — iced, hot or as a latte.</p>
+            <a href="#menu" class="feature-card__link" id="feature-matcha-link">
+              Explore Matcha
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
 
+        <article class="feature-card" id="feature-crawl">
+          <div class="feature-card__img-wrap">
+            <img src="images/cafe_interior.jpg" alt="Cozy premium café interior with Edison lights" class="feature-card__img" loading="lazy" />
+            <div class="feature-card__overlay"></div>
+          </div>
+          <div class="feature-card__body">
+            <span class="feature-card__badge">📍 Crawl</span>
+            <h3 class="feature-card__title">Café Crawl</h3>
+            <p class="feature-card__desc">Discover and crawl through the best campus cafés. Compare Wi-Fi, ambience, prices and student reviews all in one place.</p>
+            <a href="#cafes" class="feature-card__link" id="feature-crawl-link">
+              Start Your Crawl
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== POPULAR MENU ===== -->
+  <section class="section menu-section" id="menu">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__eyebrow">Our Favourites</p>
+        <h2 class="section__title">Popular Menu <span class="accent">Picks</span></h2>
+        <p class="section__subtitle">Our most-loved drinks, made to perfection. Add to your cart and pick up at any partner café.</p>
+      </div>
+      <div class="menu__grid">
+
+        <article class="menu-card" id="menu-cappuccino">
+          <div class="menu-card__img-wrap">
+            <img src="images/cappuccino.jpg" alt="Classic Cappuccino with latte art" class="menu-card__img" loading="lazy" />
+            <span class="menu-card__tag">Best Seller</span>
+          </div>
+          <div class="menu-card__body">
+            <h3 class="menu-card__name">Classic Cappuccino</h3>
+            <p class="menu-card__desc">Rich espresso topped with velvety steamed milk foam. The perfect morning companion.</p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">₹180</span>
+              <button class="btn btn--cart" id="add-cappuccino" data-product="Classic Cappuccino" data-price="180" onclick="addToCart(this)">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card menu-card--featured" id="menu-matcha">
+          <div class="menu-card__img-wrap">
+            <img src="images/matcha_latte.jpg" alt="Iced Matcha Latte" class="menu-card__img" loading="lazy" />
+            <span class="menu-card__tag menu-card__tag--green">Fan Favourite</span>
+          </div>
+          <div class="menu-card__body">
+            <h3 class="menu-card__name">Iced Matcha Latte</h3>
+            <p class="menu-card__desc">Ceremonial-grade matcha blended with creamy milk over ice. Earthy, refreshing and vibrant.</p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">₹220</span>
+              <button class="btn btn--cart" id="add-matcha" data-product="Iced Matcha Latte" data-price="220" onclick="addToCart(this)">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card" id="menu-cold-brew">
+          <div class="menu-card__img-wrap">
+            <img src="images/cold_brew.jpg" alt="Caramel Cold Brew Coffee" class="menu-card__img" loading="lazy" />
+            <span class="menu-card__tag">New Arrival</span>
+          </div>
+          <div class="menu-card__body">
+            <h3 class="menu-card__name">Caramel Cold Brew</h3>
+            <p class="menu-card__desc">Smooth slow-steeped cold brew drizzled with house-made caramel and topped with whipped cream.</p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">₹250</span>
+              <button class="btn btn--cart" id="add-cold-brew" data-product="Caramel Cold Brew" data-price="250" onclick="addToCart(this)">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CAFÉ DISCOVERY ===== -->
+  <section class="section cafes-section" id="cafes">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__eyebrow">Café Discovery</p>
+        <h2 class="section__title">Featured <span class="accent">Cafés Near You</span></h2>
+        <p class="section__subtitle">Handpicked campus cafés with the best ambience, Wi-Fi, and student-friendly prices.</p>
+      </div>
+      <div class="cafes__grid">
+
+        <article class="cafe-card" id="cafe-campus-brew">
+          <div class="cafe-card__header">
+            <div class="cafe-card__emoji">☕</div>
+            <div class="cafe-card__rating">
+              <span class="cafe-card__stars">★★★★★</span>
+              <span>4.8</span>
+            </div>
+          </div>
+          <div class="cafe-card__body">
+            <h3 class="cafe-card__name">Campus Brew Co.</h3>
+            <p class="cafe-card__desc">A vibrant study-friendly café serving artisanal coffee and matcha. Known for its fast Wi-Fi and cozy booths perfect for group projects.</p>
+            <div class="cafe-card__tags">
+              <span class="cafe-tag">📍 Near Main Gate</span>
+              <span class="cafe-tag">📶 Fast Wi-Fi</span>
+              <span class="cafe-tag">🔌 Charging Points</span>
+            </div>
+            <div class="cafe-card__footer">
+              <span class="cafe-card__price-range">₹100–₹280</span>
+              <a href="cafe-details.html?id=1" class="btn btn--sm" id="view-campus-brew">View Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="cafe-card cafe-card--featured" id="cafe-matcha-house">
+          <div class="cafe-card__header">
+            <div class="cafe-card__emoji">🍵</div>
+            <div class="cafe-card__rating">
+              <span class="cafe-card__stars">★★★★★</span>
+              <span>4.9</span>
+            </div>
+          </div>
+          <div class="cafe-card__body">
+            <h3 class="cafe-card__name">Matcha House</h3>
+            <p class="cafe-card__desc">The go-to spot for matcha lovers. With Japanese-inspired interiors and 15+ matcha variants, this café is truly one of a kind on campus.</p>
+            <div class="cafe-card__tags">
+              <span class="cafe-tag">📍 University Road</span>
+              <span class="cafe-tag">📶 Wi-Fi Available</span>
+              <span class="cafe-tag">🌿 Matcha Specialist</span>
+            </div>
+            <div class="cafe-card__footer">
+              <span class="cafe-card__price-range">₹120–₹320</span>
+              <a href="cafe-details.html?id=2" class="btn btn--sm" id="view-matcha-house">View Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="cafe-card" id="cafe-bean-corner">
+          <div class="cafe-card__header">
+            <div class="cafe-card__emoji">🥤</div>
+            <div class="cafe-card__rating">
+              <span class="cafe-card__stars">★★★★☆</span>
+              <span>4.5</span>
+            </div>
+          </div>
+          <div class="cafe-card__body">
+            <h3 class="cafe-card__name">Bean Corner</h3>
+            <p class="cafe-card__desc">Budget-friendly and beloved. Bean Corner offers wallet-friendly cold brews, lattes and snacks. A student favourite in the market area.</p>
+            <div class="cafe-card__tags">
+              <span class="cafe-tag">📍 Student Market</span>
+              <span class="cafe-tag">📶 Wi-Fi Available</span>
+              <span class="cafe-tag">💰 Budget Friendly</span>
+            </div>
+            <div class="cafe-card__footer">
+              <span class="cafe-card__price-range">₹80–₹200</span>
+              <a href="cafe-details.html?id=3" class="btn btn--sm" id="view-bean-corner">View Details</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+      <div class="cafes__cta">
+        <a href="cafes.html" class="btn btn--outline btn--large" id="all-cafes-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          View All Cafés
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT / CTA BANNER ===== -->
+  <section class="section cta-banner" id="about">
+    <div class="container">
+      <div class="cta-banner__inner">
+        <div class="cta-banner__content">
+          <p class="section__eyebrow" style="color: var(--cream);">About The Project</p>
+          <h2 class="cta-banner__title">Built for Students,<br>By Students.</h2>
+          <p class="cta-banner__desc">Cafe Matcha Coffee Crawl is a college project that helps students discover nearby cafés, explore matcha and coffee options, compare prices and find the perfect spots to study, relax and hang out with friends.</p>
+          <div class="cta-banner__actions">
+            <a href="#coffee-crawl" class="btn btn--cream btn--large" id="start-crawl-btn">Start Your Café Crawl</a>
+            <a href="cafes.html" class="btn btn--outline-cream btn--large" id="all-cafes-about-btn">Browse All Cafés</a>
+          </div>
+        </div>
+        <div class="cta-banner__visual">
+          <div class="cta-banner__circle cta-banner__circle--1">☕</div>
+          <div class="cta-banner__circle cta-banner__circle--2">🍵</div>
+          <div class="cta-banner__circle cta-banner__circle--3">📍</div>
+          <div class="cta-banner__badge">
+            <strong>🎓 College Project</strong>
+            <span>Campus Café Discovery Platform</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo" id="footer-logo">
+            <span>🍵</span>
+            <span>Cafe Matcha<br><strong>Coffee Crawl</strong></span>
+          </a>
+          <p class="footer__tagline">Your ultimate campus café discovery companion. Find great coffee, fresh matcha and the best study spots near you.</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social" id="social-instagram" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="footer__social" id="social-twitter" aria-label="Twitter / X">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+            </a>
+            <a href="#" class="footer__social" id="social-youtube" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__links-col">
+          <h4 class="footer__col-title">Navigate</h4>
+          <ul class="footer__links">
+            <li><a href="#home" id="footer-home">Home</a></li>
+            <li><a href="#menu" id="footer-menu">Menu</a></li>
+            <li><a href="#coffee-crawl" id="footer-crawl">Coffee Crawl</a></li>
+            <li><a href="cafes.html" id="footer-cafes">Cafés</a></li>
+            <li><a href="#about" id="footer-about">About</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__links-col">
+          <h4 class="footer__col-title">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="drinks.html" id="footer-drinks">All Drinks</a></li>
+            <li><a href="cheapest-coffee.html" id="footer-cheapest">Cheapest Coffee</a></li>
+            <li><a href="reviews.html" id="footer-reviews">Reviews</a></li>
+            <li><a href="login.html" id="footer-login">Login</a></li>
+            <li><a href="signup.html" id="footer-signup">Sign Up</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__newsletter">
+          <h4 class="footer__col-title">Stay Updated</h4>
+          <p>Get new café discoveries and drink launches delivered to your inbox.</p>
+          <form class="footer__form" id="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+            <input
+              type="email"
+              id="newsletter-email"
+              name="email"
+              placeholder="your@email.com"
+              required
+              class="footer__input"
+              aria-label="Email address for newsletter"
+            />
+            <button type="submit" class="btn btn--primary" id="newsletter-submit">Subscribe</button>
+          </form>
+          <p class="footer__newsletter-msg" id="newsletter-msg" aria-live="polite"></p>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2024 Cafe Matcha Coffee Crawl. A College Project. Made with ☕ &amp; 🍵</p>
+        <p><a href="#home">Back to top ↑</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== CART NOTIFICATION ===== -->
+  <div class="cart-notification" id="cart-notification" aria-live="assertive" aria-atomic="true">
+    <div class="cart-notification__inner">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+      <span id="cart-notification-text">Added to cart!</span>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
-
 </html>

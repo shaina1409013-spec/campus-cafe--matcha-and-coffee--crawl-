@@ -1,47 +1,64 @@
 .navbar {
-    background: #3e2723;
-    color: white;
-    padding: 15px 5%;
+    background: #F9F3E8;
+    color: #3E1F0D;
+    padding: 16px 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid rgba(107, 63, 42, 0.12);
+    box-shadow: 0 4px 16px rgba(62, 31, 13, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #3E1F0D;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .nav-links {
     display: flex;
-    gap: 25px;
+    gap: 28px;
     list-style: none;
+    align-items: center;
 }
 
 .nav-links a {
-    color: white;
+    color: #6B3F2A;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-    color: #d7ccc8;
+    color: #C8922A;
 }
 
 .nav-buttons {
     display: flex;
-    gap: 10px;
+    gap: 12px;
+    align-items: center;
 }
 
 .nav-btn {
     text-decoration: none;
-    color: white;
-    border: 1px solid white;
-    padding: 8px 14px;
-    border-radius: 6px;
+    color: #3E1F0D;
+    border: 1.5px solid #6B3F2A;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
 }
 
 .nav-btn:hover {
-    background: white;
-    color: #3e2723;
+    background: #6B3F2A;
+    color: #F9F3E8;
 }

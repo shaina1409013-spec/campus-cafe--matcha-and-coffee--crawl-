@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,41 +7,65 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #faf7f2;
-    color: #333;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #FAF7F2;
+    color: #2C1A0E;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #3E1F0D;
 }
 
 .container {
     width: 90%;
     max-width: 1200px;
     margin: auto;
+    padding: 20px 0;
 }
 
 .btn {
-    display: inline-block;
-    background: #6d4c41;
-    color: white;
-    padding: 12px 22px;
-    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #6B3F2A 0%, #3E1F0D 100%);
+    color: #F9F3E8;
+    padding: 12px 24px;
+    border-radius: 30px;
     text-decoration: none;
     border: none;
+    font-weight: 600;
+    font-size: 0.9rem;
     cursor: pointer;
+    box-shadow: 0 4px 14px rgba(107, 63, 42, 0.25);
+    transition: all 0.25s ease;
 }
 
 .btn:hover {
-    background: #4e342e;
+    background: linear-gradient(135deg, #3E1F0D 0%, #241106 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(107, 63, 42, 0.35);
 }
 
 .section-title {
     text-align: center;
-    margin: 50px 0 30px;
-    font-size: 32px;
+    margin: 40px 0 24px;
+    font-size: 2.2rem;
+    color: #3E1F0D;
 }
 
 .card {
-    background: white;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background: #FFFFFF;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 6px 20px rgba(62, 31, 13, 0.08);
+    border: 1px solid rgba(107, 63, 42, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 28px rgba(62, 31, 13, 0.12);
 }
